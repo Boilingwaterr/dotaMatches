@@ -1,0 +1,64 @@
+.graphsWrapper{
+    flex-direction: column;
+    display: flex;
+    margin: 50px 0px;
+}
+
+.findWrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.graphs{
+    display: flex;
+    flex-direction: column;
+    background-color: #2E2F37;
+    padding: 25px 0px;
+    box-shadow: #000000  0px 0px 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    color: #c1c1c1;
+    font-weight: 700;
+    box-shadow: #000000  0px 0px 2px;
+    background-color: #383a42;
+}
+
+.activeSpan{
+    z-index: 1;
+    box-shadow: #000000  0px 0px 2px;
+    display: flex;
+    justify-self: center;
+    padding: 25px 25px;
+    align-items: center;
+    background-color: #2E2F37;
+    color: #ffffff;
+    height: 100%;
+}
+
+.buttons span{
+    padding: 25px 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tableCard{
+    display: flex;
+    margin: 50px 0px;
+    flex-direction: column;
+    background-color: #2E2F37;
+    padding: 25px 0px;
+    box-shadow: #000000  0px 0px 3px;
+    justify-content: center;
+    align-items: center;
+}

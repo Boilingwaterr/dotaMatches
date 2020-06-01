@@ -1,0 +1,93 @@
+p, h4, h3 {
+    color: #c1c1c1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutPlayer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #48484b;
+    align-items: center;
+    padding: 10px;
+}
+
+.aboutPlayer img {
+    margin-right: 20px;
+}
+
+.playerInfo {
+    display: flex;
+}
+
+.winRate {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.winRate h4{
+    padding: 10px 10px;
+}
+
+.rankTier {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.iconWrapper{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dotaPlusMedal{
+    width: 45px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.dotaPlusMedal img{
+    width: 100%;
+    height: 100%;
+}
+
+.rankTierContainer{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.rankTierContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.rankMedalStar{
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+.rankMedalBoard{
+    display: flex;
+    width: 40px;
+    height: 15px;
+    left: calc(50% - 20px);
+    top: 50px;
+    overflow: hidden;
+    color: #e4d6b9;
+    font-size: 13px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.winratewrapper{
+    display: flex;
+}

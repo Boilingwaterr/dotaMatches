@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #363742;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #B4B4B4
+}

@@ -1,0 +1,5 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    color: #c1c1c1;
+}

@@ -1,0 +1,35 @@
+.labelStyle{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background-color: #C26C6C;
+    justify-content: center;
+}
+.labelStyle div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+.labelStyle input{
+    border: none;
+    outline: none;
+    color: #505050;
+    padding: 6px;
+    width: 100%;
+}
+
+.labelStyle div:hover{
+    background-color: #A04949;
+}
+
+.helper{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
