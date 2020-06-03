@@ -7,15 +7,20 @@ const FindField = props => {
 
     const changeHandler = (event) => {
         setKeyWord(event.target.value);
-    }
+    };
+
+    const search = () => {
+        setKeyWord('');
+        props.history.push(`/matches/${keyWord}`);
+    };
 
     const submitHandler = (event) => {
         if (event.key === 'Enter'){
             event.preventDefault();
-            setKeyWord('');
-            props.history.push(`/matches/${keyWord}`);
+            search();
         } 
-    }
+    };
+
     return <>
         <form onKeyPress = { submitHandler }>
             <label htmlFor = "find" className = { Style.labelStyle }>
@@ -27,7 +32,7 @@ const FindField = props => {
                     autoComplete = 'off'
                     placeholder = 'Введите номер матча'  
                 />
-                <div>
+                <div onClick = { () => search() }>
                     <img src = { find } alt = "find"/>
                 </div>
             </label>
