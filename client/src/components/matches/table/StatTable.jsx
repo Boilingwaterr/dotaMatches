@@ -6,6 +6,7 @@ import HeroImg from './HeroImgTable';
 import ItemImg from './ItemImgTable';
 import PlayerInfo from './PlayerInfoTable';
 import { GET_PLAYER_INFO, GET_HERO_STATS } from '../../../graphql-cli/queries';
+// import SkillBuild from './SkillBuildComponent';
 
 const StatTable = props => {
 
@@ -156,6 +157,7 @@ const StatTable = props => {
                                 <div className = { Style.switchButton }>
                                 </div>
                             </td>
+                            {/* <SkillBuild show = { true }/> */}
                         </tr>
                 })}
                 </tbody>

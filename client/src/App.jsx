@@ -6,13 +6,25 @@ import { GET_MATCH_BY_ID } from './graphql-cli/queries';
 import MatchResults from './components/matches/MatchResults.jsx';
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import SearchPage from './components/searchPage/SearchComponent.jsx';
+import FindField from './components/FindField';
 
 const QueryWrapper = props => (
     <>
       <Query query = { GET_MATCH_BY_ID } variables = { {'id':props.match.params.matchId} } >
           {({ loading, error, data }) => {
           if (loading) return <p>Loading…</p>;
-          if (error) return <p>Error</p>;
+          if (error) {
+            return (
+              <div className = { Style.errorField }>
+                <FindField { ...props }/>
+                {
+                  error.message === "Network error: Failed to fetch" 
+                  ? <p>Отсутствует соединение с сервером</p>
+                  : <p>Матч не найден</p>
+                }
+              </div>
+            );
+          }
           return(
             <div>
               <MatchResults 

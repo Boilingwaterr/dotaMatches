@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Style from './StatTable.module.css';
 import Tooltip from '../../tooltip/Tooltip';
 import { calculateCoordinates } from '../../../utility';
+import { constants } from '../../constants';
 
 const HeroImg = props =>{
 
@@ -12,7 +13,7 @@ const HeroImg = props =>{
     const toolTipSize = {
         height: 450,
     }
-
+    const { imgSource } = constants;
     return <div 
         key = { result[0].img + id }
         className = { Style.heroImage }
@@ -31,7 +32,7 @@ const HeroImg = props =>{
             marginLeft: '1px'
         }}></div>
         <img 
-            src = { `https://api.opendota.com${result[0].img}` } 
+            src = { `${ imgSource }${ result[0].img }` } 
             alt = ""
         />
 

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import Style from './StatTable.module.css';
 import { generateKeys } from '../../../utility';
+import { constants } from '../../constants'
 //import Tooltip from '../../tooltip/Tooltip';
 
 const ItemImg = props =>{
 
     const [ showTooltip, setShowTooltip ] = useState(false);
+    const { imgSource } = constants;
     let keys;
     //const [ coordinates, setCoordinates ] = useState({});// coordinates for tooltip
     const { backPackItemImg, itemImg, neutralItemImg } = props;
@@ -19,7 +21,7 @@ const ItemImg = props =>{
                         }
                         return <img
                             key = { keys.map( (itm, indx) => indx === index && itm ) }
-                            src = {`https://api.opendota.com${item}`} 
+                            src = {`${ imgSource }${ item }`} 
                             alt = " "
                             onMouseEnter = { () => 
                                 setTimeout( () => {
@@ -47,7 +49,7 @@ const ItemImg = props =>{
                         }
                         return <img 
                             key = { keys.map( (itm, indx) => indx === index && itm ) }
-                            src = {`https://api.opendota.com${item}`} 
+                            src = {`${ imgSource }${ item }`} 
                             alt = " "
                             onMouseEnter = { () => setShowTooltip(true)}
                             onMouseMove = { event => {
@@ -72,7 +74,7 @@ const ItemImg = props =>{
                     }
                     return <img
                         key = { keys.map( (itm, indx) => indx === index && itm ) }
-                        src = {`https://api.opendota.com${item}`} 
+                        src = {`${ imgSource }${ item }`} 
                         alt = " "
                         onMouseEnter = { () => setShowTooltip(true)}
                         onMouseMove = { event => {
