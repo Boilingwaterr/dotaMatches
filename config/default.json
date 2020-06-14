@@ -1,4 +1,0 @@
-{
-    "port": 3000,
-    "mongoUri": "mongodb+srv://boilingWater:gEdGRKow1O2wBzZL@freecluster-wjbct.mongodb.net/test?retryWrites=true&w=majority"
-}
