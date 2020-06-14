@@ -26,7 +26,7 @@ const PlayerInfo = props => {
         key = { data.getPlayerInfo.profile.avatar }
         className = { Style.playerInfo }
     >
-            <div style = {{ color }}>
+            <div style = {{ color }} className = { Style.playerName }>
                 { data.getPlayerInfo.profile.personaname }
             </div>
             <div 
