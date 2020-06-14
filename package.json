@@ -14,7 +14,10 @@
     "mongoose": "^5.9.3"
   },
   "scripts": {
-    "start": "npx nodemon server"
+    "start": "node index.js",
+    "startDevServer": "npx nodemon index.js",
+    "startDevCli": "npm run start --prefix client",
+    "startDev": "npm run startDevServer | npm run startDevCli"
   },
   "eslintConfig": {
     "extends": "react-app"
